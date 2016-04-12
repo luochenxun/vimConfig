@@ -1,0 +1,2 @@
+let g:spf13_bundle_groups=['general', 'programming', 'misc', 'scala', 'youcompleteme', 'javascript','html']
+au BufNewFile,BufRead *.handlebars set filetype=html

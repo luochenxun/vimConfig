@@ -1,0 +1,33 @@
+"{  JS
+"
+"   for jsx
+    Bundle 'mxw/vim-jsx'
+    let g:jsx_ext_required = 0
+
+    " code complete
+    set rtp+=/path/to/jsx.vim
+    Bundle 'git://github.com/jsx/jsx.vim.git'
+
+    " code format
+    Bundle 'maksimr/vim-jsbeautify'
+    "map <c-f> :call JsBeautify()<cr>
+    " or
+    autocmd FileType javascript noremap <buffer>  <c-f> :call JsxBeautify()<cr>
+    " for html
+    autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+    " for css or scss
+    autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+"}
+
+"{  Code tools
+"   
+"   for comments
+    Bundle 'vim-scripts/DoxygenToolkit.vim'
+    let g:DoxygenToolkit_authorName="luochenxun, luochenxun@gmail.com, www.luochenxun.com"
+    let s:licenseTag = "Copyright(C)\<enter>"
+    let s:licenseTag = s:licenseTag . "For free\<enter>"
+    let s:licenseTag = s:licenseTag . "All right reserved\<enter>"
+    let g:DoxygenToolkit_licenseTag = s:licenseTag
+    let g:DoxygenToolkit_briefTag_funcName="yes"
+    let g:doxygen_enhanced_color=1
+"}
