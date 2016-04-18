@@ -17,6 +17,9 @@
     autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
     " for css or scss
     autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+
+    " Code complete by tern
+    Bundle 'marijnh/tern_for_vim'
 "}
 
 "{  Code tools
